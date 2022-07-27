@@ -1,0 +1,702 @@
+:root{
+    --colorBackground: #DCE4DC;
+    --colorGris: #C4CCD4;
+    --colorBlanco: #FEFEFE;
+    --colorVerde: #A8CF45;
+    --colorRed: #C20813 ;
+    --colorAzul: #00A0E3;
+    --colorNegro: #000;
+    --colorNegroOpacity: rgba(0,0,0,0.53);
+}
+
+@font-face {
+    font-family: "Product Sans-Regular";
+    src: url(../fonts/ProductSansRegular.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans-Bold";
+    src: url(../fonts/ProductSansBold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Product Sans-Regular";
+}
+
+.contenedor {
+    background-image: url(../img/back001.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 950PX;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 8.5%;
+    margin-top: 85px;
+    width: 370px;
+    height: 120px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.formulario {
+    width: 30%;
+    background: var(--colorGris);
+    opacity: 0.9;
+    height: 700px;
+    margin-left: 35%;
+    margin-top: 85px;
+    position: absolute;
+    border: 1px solid #FFF;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.53);
+}
+
+.formulario form {
+    /*background: var(--colorGris);*/
+    font-size: 14px;
+}
+
+.group {
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 35px;
+    z-index: 10;
+    background: none;
+}
+
+.group label {
+    background: none;
+}
+
+.group input {
+    /*background: var(--colorBlanco);*/
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+} 
+
+.group2 {
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 32px;
+    z-index: 10;
+    background: none;
+}
+
+.group2 label {
+    background: none;
+}
+
+.group2 input  {
+    /*background: var(--colorBlanco);*/
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+}   
+
+.group3 {
+    width: 42.5%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 30px;
+    z-index: 10;
+    background: none;
+    display: inline-block;
+}
+
+.group3 label {
+    background: none;
+}
+
+.group3 input , select {
+    /*background: var(--colorBlanco);*/
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+}  
+
+.btncal {
+    margin-left: 32.5%;
+    margin-top: 50px;
+    border: none;
+    border-radius: 0;
+    width: 35%;
+    height: 38px;
+    font-size: 17px;
+    background: var(--colorVerde);
+    color: var(--colorBlanco);
+    cursor: pointer;
+}
+
+.group4 {
+    width: 35%;
+    height: 50px;
+    margin-left: 32.5%;
+    margin-top: 20px;
+    z-index: 10;
+    background: none;
+}
+
+.group4 label {
+    background: none;
+}
+
+.group4 input {
+    background: var(--colorBlanco);
+    color: #000;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
+}
+
+
+.btnticket{
+    margin-left: 32.5%;
+    margin-top: 50px;
+    border: none;
+    border-radius: 0;
+    width: 35%;
+    height: 38px;
+    font-size: 17px;
+    background: var(--colorAzul);
+    color: var(--colorBlanco);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnticket a {
+    margin: 0 auto;
+}
+
+
+.ticket {
+    background: var(--colorBlanco);
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 68%;
+    width: 28%;
+    height: 420px;
+    font-size: 18px;
+}
+
+.ticket .titulo {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.ticket .nombre {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 45px;
+    font-family: "Product Sans-Bold";
+}
+
+.ticket .nombre p { 
+    display: inline-block;
+    font-family: "Product Sans-Regular";
+}
+
+.ticket .direccion {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 22px;
+    font-family: "Product Sans-Bold";
+}
+
+.ticket .direccion p {
+    display: inline-block;
+    font-family: "Product Sans-Regular";
+}
+
+.ticket .ciudad {
+    margin-left: 5%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.ticket .departamento {
+    margin-left: 8%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.ticket .filalabels {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.ticket .lblcant {
+    width: 42.5%;
+    font-family: "Product Sans-Bold";
+    display: inline-block;
+    text-align: center;
+}
+
+.ticket .lblvvalorase {
+    width: 42.5%;
+    margin-left: 5%;
+    text-align: center;
+    font-family: "Product Sans-Bold";
+    display: inline-block;
+}
+
+.ticket .filavalores {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.ticket .filavalores .cant {
+    width: 42.5%;
+    display: inline-block;
+    text-align: center;
+}
+
+.ticket .filavalores .valorase {
+    width: 42.5%;
+    display: inline-block;
+    text-align: center;
+}
+
+.ticket .lblvalorpag {
+    text-align: center;
+    font-family: "Product Sans-Bold";
+    margin-top: 15px;
+}
+
+.ticket .valorpag {
+    text-align: center;
+    margin-top: 15px;
+}
+.btnticketconf{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btnticketconf .boton {
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background: var(--colorVerde);
+    font-size: 17px;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+.btnticketconf a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--colorBlanco);
+}
+
+.btnticketcancel{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btnticketcancel .boton{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background: var(--colorRed);
+    font-size: 17px;
+    padding: 7px 25px;
+    text-align: center;
+}
+
+.btnticketcancel a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--colorBlanco);
+}
+
+.swal-overlay {
+    background: rgba(0,0,0,0.93);
+}
+
+.swal-modal {
+    border-radius: 0;
+    
+}
+
+.swal-content ul li  {
+    list-style: none;
+}
+
+.swal-button--confirm{
+    background: var(--colorVerde);
+    border-color: var(--colorVerde);
+    border-radius: 0;
+    color: #FFF;
+}
+
+.swal-button--cancel{
+    background: var(--colorAzul);
+    border-color: var(--colorAzul);
+    border-radius: 0;
+    color: #FFF;
+}
+
+.swal-button--confirm:hover {
+    background: var(--colorVerde) !important;
+    border: unset;
+}
+
+.swal-button--cancel:hover {
+    background: var(--colorAzul) !important;
+    border: unset;
+}
+
+.swal-text {
+    font-size: 14px;
+    font-family: "Product Sans-Bold";
+    color: #000;
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+@media (max-width: 1366px) {
+
+    .contenedor {
+        background-image: url(../img/back001.png);
+        width: 100%;
+        /* height: 100vh; */
+        max-height: 100vh;
+        background-size: 100% 100%;
+    }
+
+    .logo {
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 65px;
+        width: 250px;
+        height: 80px;
+    }
+
+    .formulario {
+        width: 30%;
+        /*opacity: 0.95;*/
+        height: 500px;
+        margin-left: 35.5%;
+        margin-top: 65px;
+        position: absolute;
+    }
+
+    .group {
+        width: 90%;
+        height: 50px;
+        margin-left: 5%;
+        margin-top: 20px;
+        z-index: 10;
+        background: none;
+    }
+    
+    .group label {
+        background: none;
+    }
+    
+    .group input {
+        background: var(--colorBlanco);
+        color: #000;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: 28px;
+    }
+
+    /*input::placeholder{
+        color: #000;
+        padding-left: 15px;
+    }*/
+    
+    .group2 {
+        width: 90%;
+        height: 50px;
+        margin-left: 5%;
+        margin-top: 11px;
+        z-index: 10;
+        background: none;
+    }
+    
+    .group2 label {
+        background: none;
+    }
+    
+    .group2 input , select {
+        background: var(--colorBlanco);
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: 28px;
+    }
+
+    .group3 {
+        width: 42.5%;
+        height: 50px;
+        margin-left: 5%;
+        margin-top: 11px;
+        z-index: 10;
+        background: none;
+        display: inline-block;
+    }
+
+    .group3 label {
+        background: none;
+    }
+    
+    .group3 input , select {
+        background: var(--colorBlanco);
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: 28px;
+    }
+
+    .group4 {
+        width: 35%;
+        height: 50px;
+        margin-left: 32.5%;
+        margin-top: 20px;
+        z-index: 10;
+        background: none;
+    }
+    
+    .group4 label {
+        background: none;
+    }
+    
+    .group4 input {
+        background: var(--colorBlanco);
+        color: #000;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: 28px;
+    }
+
+    .btncal {
+        margin-left: 32.5%;
+        margin-top: 20px;
+        border: none;
+        border-radius: 0;
+        width: 35%;
+        height: 30px;
+        font-size: 13px;
+        background: var(--colorVerde);
+        color: var(--colorBlanco);
+        cursor: pointer;
+    }
+
+    .btnticket {
+        margin-left: 32.5%;
+        margin-top: 20px;
+        border: none;
+        border-radius: 0;
+        width: 35%;
+        height: 30px;
+        font-size: 13px;
+        background: var(--colorAzul);
+        color: var(--colorBlanco);
+        cursor: pointer;
+    }
+
+    .ticket {
+        position: absolute;
+        margin-top: 65px;
+        margin-left: 69%;
+        width: 27%;
+        height: 340px;
+        font-size: 13px;
+    }
+
+    .ticket .nombre {
+        margin-left: 5%;
+        margin-top: 25px;
+        font-family: "Product Sans-Bold";
+    }
+
+    .ticket .direccion {
+        margin-left: 5%;
+        margin-top: 10px;
+        font-family: "Product Sans-Bold";
+    }
+
+    .ticket .ciudad {
+        margin-left: 5%;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .ticket .departamento {
+        margin-left: 8%;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .ticket .filalabels {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    
+    .ticket .lblcant {
+        width: 42.5%;
+        font-family: "Product Sans-Bold";
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .ticket .lblvvalorase {
+        width: 42.5%;
+        margin-left: 5%;
+        text-align: center;
+        font-family: "Product Sans-Bold";
+        display: inline-block;
+    }
+    
+    .ticket .filavalores {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 8px;
+    }
+    
+    .ticket .filavalores .cant {
+        width: 42.5%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .ticket .filavalores .valorase {
+        width: 42.5%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .ticket .lblvalorpag {
+        text-align: center;
+        font-family: "Product Sans-Bold";
+        margin-top: 10px;
+    }
+    
+    .ticket .valorpag {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .btnticketconf {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .boton {
+        text-decoration: none;
+        color: var(--colorBlanco);
+        background: var(--colorVerde);
+        font-size: 13px;
+        padding: 7px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background: var(--colorBackground);
+    }
+    .contenedor {
+        width: 100%;
+        background: var(--colorBackground) !important;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+    }
+
+    .logo {
+        margin: 10px auto;
+        width: 100px;
+        height: 50px;
+    }
+
+    .formulario {
+        width: 90%;
+        /*opacity: 0.95;*/
+        height: 450px;
+        margin-top: 80px;
+        margin-left: 0;
+        position: absolute;
+    }
+
+    .formulario .btnticket {
+        margin-left: 28%;
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .formulario .group4 {
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .formulario .btncal {
+        width: 40%;
+        margin-left: 55%;
+        position: absolute;
+        margin-top: -35px;
+    }
+
+    /* .formulario .group4 {
+        width: 45%;
+        height: 50px;
+        margin-left: 28%;
+        margin-top: 20px;
+        z-index: 10;
+        background: none;
+    }
+
+    .formulario .btncal {
+        width: 45%;
+        margin-left: 28%;
+    } */
+
+    .ticket {
+        position: absolute;
+        margin-top: 560px;
+        margin-left: 0;
+        width: 90%;
+        height: 340px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .swal-overlay {
+        background: rgba(0,0,0,0.83);
+    }
+}
+
+@media (max-width: 515px){
+    .ticket {
+        height: 370px;
+    }
+}
+
+@media (max-width: 365px){
+    .ticket {
+        height: 400px;
+    }
+}

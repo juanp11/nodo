@@ -1,0 +1,199 @@
+:root {
+    --colorBackground: #F1F4F4;
+}
+
+/*@font-face {
+    font-family: "Product Sans-Regular";
+    src: url(fonts/ProductSansRegular.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans-Bold";
+    src: url(fonts/ProductSansBold.ttf);
+}*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Product Sans-Regular";
+}
+
+.contenedortabla {
+    background: var(--colorBackground);
+    width: 1365px;
+    height: 657px;
+    max-height: 657px;
+}
+
+.logo2 {
+    background: var(--colorBackground);
+    margin-left: 7.5%;
+    padding-top: 50px;
+    font-family: "Product Sans-Bold";
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+}
+
+.mas {
+    margin-left: 10%;
+    font-family: "Product Sans-Bold";
+}
+
+.mas a{
+    text-decoration: none;
+    color: #848B92;
+    font-size: 18px;
+}
+
+/* .mas .icon-add {
+    
+} */
+
+.tabla {
+    width: 85%;
+    margin-left: 7.5%;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+}
+.tabla table {
+    /* border: 2px solid #000; */
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 12px 5px;
+}
+
+table thead th {
+    height: 20px;
+    padding: 5px 0;
+}
+
+thead th:nth-child(1) {
+    width: 4%;
+}
+    
+thead th:nth-child(2) {
+    width: 31%;
+}
+    
+thead th:nth-child(3) {
+    width: 31%;
+}
+    
+thead th:nth-child(4) {
+    width: 31%;
+}
+
+thead th:nth-child(5) {
+    width: 5%;
+}
+
+tbody th, td {
+    height: 20px;
+    padding: 5px 0;
+}
+
+tbody td:nth-child(2){
+    background: #fefefe;
+}
+
+tbody td:nth-child(3){
+    background: #fefefe;
+}
+
+tbody td:nth-child(4){
+    background: #fefefe;
+}
+    
+/* th, td {
+        padding: 20px;
+    } */
+.links {
+    text-decoration: none;
+    color: #848B92;
+}
+
+.pagination{
+    margin: 20px 0
+}
+
+.pagination ul {
+    list-style: none;
+    text-align: center;
+}
+
+.pagination ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.pagination ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: "Product Sans-Regular";
+    font-size: 16px;
+    border-radius: 20%;
+    padding: 8px 13px;
+    border-radius: 20%;
+    color: #848B92;
+    background: #fff;
+}
+
+.pagination ul li a.active {
+    color: #FFF;
+    background-color: #00A0E3;
+}
+
+.pagination ul li a:hover {
+    background: #00A0E3;
+    color: #FFF;
+}
+
+.icon-chevrons-right, .icon-last_page {
+    font-size: 17px !important;
+    padding: 7px 11px 11px !important;
+}
+
+.icon-chevrons-left, .icon-first_page {
+    font-size: 17px !important;
+    padding: 7px 11px 11px  !important;
+}
+
+.contenedoredicion {
+    background: rgba(0, 0, 0, 0.83);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+}
+
+.contenedoredicion .ticket {
+    height: 350px;
+}
+
+.contenedoredicion .tituloedicion {
+    margin-top: 60px;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedoredicion .formulario {
+    margin-top: 20px;
+    margin-left: 21% ;
+}
+
+.contenedoredicion .ticket {
+    margin-top: 20px;
+    margin-left: 54%;
+    width: 30%;
+}
